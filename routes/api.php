@@ -9,4 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::get('/dashboard',[SourceController::class,'index']);
+Route::get('/dashboard',[SourceController::class,'createAvailableSource'])->middleware('Validation:Source');

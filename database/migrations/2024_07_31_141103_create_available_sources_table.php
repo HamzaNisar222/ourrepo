@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('available_resources', function (Blueprint $table) {
+        Schema::create('available_sources', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('type');
